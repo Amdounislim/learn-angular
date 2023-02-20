@@ -14,7 +14,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { ObservableTestComponent } from './components/observable-test/observable-test.component';
 import { PipeComponent } from './components/pipe/pipe.component';
 import { FormTestComponent } from './components/form-test/form-test.component';
-
+import { QRCodeModule } from 'angularx-qrcode';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,14 +27,10 @@ import { FormTestComponent } from './components/form-test/form-test.component';
     ProductsComponent,
     ObservableTestComponent,
     PipeComponent,
-    FormTestComponent
+    FormTestComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, QRCodeModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
